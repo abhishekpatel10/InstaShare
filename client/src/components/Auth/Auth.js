@@ -25,11 +25,12 @@ const initialState = {
   password: "",
   confirmPassword: "",
 };
+const clientId = process.env.clientId
 
 gapi.load("client:auth2", () => {
   gapi.client.init({
-    clientId:
-      "701920896062-h1s747l2cammfjmtjspe1cv5ioh5nhjh.apps.googleusercontent.com",
+    clientId: clientId
+    ,
     plugin_name: "chat",
   });
 });
@@ -138,7 +139,7 @@ const SignUp = () => {
             {isSignup ? "Sign Up" : "Sign In"}
           </Button>
           <GoogleLogin
-            clientId="701920896062-h1s747l2cammfjmtjspe1cv5ioh5nhjh.apps.googleusercontent.com"
+            clientId
             render={(renderProps) => (
               <Button
                 className={classes.googleButton}
