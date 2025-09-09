@@ -69,7 +69,7 @@ You must have the following software installed on your machine:
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/abhishekpatel10/InstaShare.git
-    cd YOUR_REPOSITORY_NAME
+    cd InstaShare
     ```
 
 2.  **Set up the Backend Server:**
